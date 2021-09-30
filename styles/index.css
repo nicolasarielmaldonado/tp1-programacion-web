@@ -1,11 +1,10 @@
 * {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  color: white;
-  font-weight: 500;
+.logo {
+  height: 50%;
 }
 
 .top-bar {
@@ -60,16 +59,15 @@ h1 {
   height: 3rem;
   text-align: center;
 }
-.inscripcion-info{
+.inscripcion-info {
   text-align: center;
-  
 }
-.pares{
+.pares {
   display: flex;
   margin: 2rem;
   text-align: left;
 }
-.celdas{
+.celdas {
   padding: 0 1rem 0 0;
 }
 .submit {
@@ -86,7 +84,7 @@ h1 {
   background-color: rgb(73, 73, 73);
   color: #fff;
 }
-.parrafo{
+.parrafo {
   width: 30rem;
   height: 20rem;
   display: flow-root;
@@ -94,14 +92,22 @@ h1 {
   justify-content: space-between;
   padding: 0rem 2rem 0rem 6rem;
 }
-.texto{
+.texto {
   display: flex;
   font-size: 12px;
 }
-footer a{
+footer a {
   color: #fff;
   text-decoration: none;
 }
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
+}
+
+/******************************************************Main********************************************************/
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
 }
