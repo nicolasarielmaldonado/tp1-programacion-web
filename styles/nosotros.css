@@ -1,0 +1,23 @@
+.profesores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.profesores img{
+    border-radius: 50%;
+    width: 17rem;
+    
+}
+
+.profesores p{
+    text-align: center;
+    width: 100%;
+}
+.contenedor{
+    align-items: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
