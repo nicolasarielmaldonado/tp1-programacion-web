@@ -10,7 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
     <title>Home</title>
   </head>
   <body>
@@ -18,9 +23,15 @@
       <div class="top-bar">
         <img class="logo" src="/img/unlam.svg" alt="Logo_Unlam" />
         <div class="right-buttons">
-          <button class="circle-button"></button>
-          <button class="circle-button"></button>
-          <button class="circle-button"></button>
+          <div class="circle-button">
+            <img class="social-media-img" src="./img/facebook.svg" />
+          </div>
+          <div class="circle-button">
+            <img class="social-media-img" src="./img/twitter.svg" />
+          </div>
+          <div class="circle-button">
+            <img class="social-media-img" src="./img/instagram.svg" />
+          </div>
         </div>
       </div>
       <nav class="nav">
@@ -46,21 +57,167 @@
     </header>
 
     <main>
-      <h1 class="title">Home</h1>
+      <section class="carrousel-container">
+        <img class="carrousel-img" src="/img/classspace.webp" />
+        <div class="carrousel-card">
+          <div class="carrousel-button back-button">
+            <img class="carrousel-arrow back-arrow" src="/img/arrow.svg" />
+          </div>
+          <div class="carrousel-button">
+            <img class="carrousel-arrow" src="/img/arrow.svg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-steps">
+        <h1 class="title">TITULO DE LA PAGINA</h1>
+
+        <div class="steps-container">
+          <div class="steps-column">
+            <div class="steps-img-circle circle-aqua">1</div>
+            <div class="steps-description">Buscá tu Establecimiento</div>
+          </div>
+          <div class="steps-column">
+            <div class="steps-img-circle circle-lightblue">2</div>
+            <div class="steps-description">Seleccioná el curso</div>
+          </div>
+          <div class="steps-column">
+            <div class="steps-img-circle circle-blue">3</div>
+            <div class="steps-description">Inscribite</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-establishments">
+        <h1 class="title">ESTABLECIMIENTOS</h1>
+
+        <div class="establishments-container">
+          <div class="establishments-column">
+            <div class="establishments-img-square">
+              <img class="establishments-img" src="./img/stablishment-1.webp" />
+              <div class="establishments-description">Titulo</div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8535226401814!2d-58.45267200633059!3d-34.607865288380516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1004ef3f47%3A0xb180ad11b451e1e8!2sCucha%20Cucha%201201%2C%20C1416%20CJC%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1633291236535!5m2!1ses!2sar"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="establishments-column">
+            <div class="establishments-img-square">
+              <img class="establishments-img" src="./img/stablishment-2.webp" />
+              <div class="establishments-description">Titulo</div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7000181782983!2d-58.438235784474905!3d-34.6117463804574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6a403507e1%3A0x37ec8cffb78ae7cb!2sDr.%20Juan%20Felipe%20Aranguren%20301-399%2C%20C1405CRG%20CABA!5e0!3m2!1ses!2sar!4v1633291880140!5m2!1ses!2sar"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="establishments-column">
+            <div class="establishments-img-square">
+              <img class="establishments-img" src="./img/stablishment-3.webp" />
+              <div class="establishments-description">Titulo</div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8535226401814!2d-58.45267200633059!3d-34.607865288380516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1004ef3f47%3A0xb180ad11b451e1e8!2sCucha%20Cucha%201201%2C%20C1416%20CJC%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1633291236535!5m2!1ses!2sar"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="establishments-column">
+            <div class="establishments-img-square">
+              <img class="establishments-img" src="./img/stablishment-4.webp" />
+              <div class="establishments-description">Titulo</div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7000181782983!2d-58.438235784474905!3d-34.6117463804574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6a403507e1%3A0x37ec8cffb78ae7cb!2sDr.%20Juan%20Felipe%20Aranguren%20301-399%2C%20C1405CRG%20CABA!5e0!3m2!1ses!2sar!4v1633291880140!5m2!1ses!2sar"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-backdrop section-form">
+        <h1 class="title">BUSCÁ EL CURSO E INSCRIBITE</h1>
+        <form class="form-container">
+          <div class="form-column">
+            <div class="form-input-container">
+              <label for="provincia">Seleccioná la provincia:</label>
+              <select id="provincia" name="provincia" class="form-input">
+                <option value="" disabled selected></option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="Cordoba">Cordoba</option>
+              </select>
+            </div>
+            <div>
+              <p>Nombre del establecimiento:</p>
+              <p>Dirección:</p>
+              <p>Localidad:</p>
+              <p>Provincia:</p>
+              <p>Email:</p>
+            </div>
+          </div>
+
+          <div class="form-column">
+            <div class="form-input-container">
+              <label for="establishment">Seleccioná el establecimiento:</label>
+              <select
+                id="establishment"
+                name="establishment"
+                class="form-input"
+              >
+                <option value="" disabled selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="form-input-container">
+              <label for="language">Idiomas:</label>
+              <select id="language" name="language" class="form-input">
+                <option value="" disabled selected></option>
+                <option value="Español">Español</option>
+                <option value="Ingles">Ingles</option>
+                <option value="Francés">Francés</option>
+              </select>
+            </div>
+
+            <div class="form-input-container">
+              <label for="hourshift">Horarios y modalidad:</label>
+              <select id="hourshift" name="hourshift" class="form-input">
+                <option value="" disabled selected></option>
+                <option value="Mañana">Mañana</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noche">Noche</option>
+              </select>
+            </div>
+
+            <div class="container-button-form">
+              <div class="form-input-container">
+                <p>Precio:</p>
+                <div type="number" class="form-number"></div>
+              </div>
+              <button type="submit" class="button-submit">INSCRIBITE</button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="integrantes">
-        <h4>Datos del Grupo:</h4>
-        <br />
         <p>Fagnano, Facundo Damián - DNI</p>
         <p>Lamastra, Diego Martín - DNI</p>
         <p>Maldonado, Nicolás Ariel - DNI</p>
         <p>Orquín, Nuria - DNI</p>
       </div>
       <div class="menu">
-        <h4>Menú Inferior:</h4>
-        <br />
         <p>
           <a href="/establecimiento.html">Establecimientos</a>
         </p>
@@ -69,13 +226,16 @@
         <p><a href="/contacto.html">Contacto</a></p>
       </div>
       <div>
-        <h4>Redes Sociales:</h4>
-        <br />
         <div class="right-buttons">
-          <button class="circle-button"></button>
-          <button class="circle-button"></button>
-          <button class="circle-button"></button>
-          <br /><br /><br />
+          <div class="circle-button">
+            <img class="social-media-img" src="./img/facebook.svg" />
+          </div>
+          <div class="circle-button">
+            <img class="social-media-img" src="./img/twitter.svg" />
+          </div>
+          <div class="circle-button">
+            <img class="social-media-img" src="./img/instagram.svg" />
+          </div>
         </div>
       </div>
     </footer>
