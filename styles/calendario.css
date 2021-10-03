@@ -68,3 +68,12 @@
   font-weight: 400;
   font-size: 12px;
 }
+
+.item-description a {
+  text-decoration: none;
+}
+
+.item-description a:visited {
+  text-decoration: none;
+  color: black;
+}
