@@ -1,0 +1,70 @@
+.title {
+  margin-block: 3rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.custom-select {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.image-calendar {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.section {
+  margin-block: 2rem;
+}
+
+.title-section {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  width: 45%;
+  margin-block: 2rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  justify-content: space-between;
+}
+
+.important-description {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.title-course {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.item-description {
+  font-weight: 400;
+  font-size: 12px;
+}
