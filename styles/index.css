@@ -104,6 +104,16 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.btn {
+  min-width: min-content;
+  padding: 5px;
+  background-color: #80a37d;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
 /******************************************************Main********************************************************/
 
 .title {
