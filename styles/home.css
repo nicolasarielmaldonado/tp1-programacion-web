@@ -24,8 +24,7 @@
 }
 
 .section-steps,
-.section-establishments,
-.section-form {
+.section-establishments {
   margin: 2rem auto;
 }
 
@@ -174,19 +173,6 @@
   height: 200px;
   border-radius: 20px;
   border: none;
-}
-
-.form-backdrop {
-  border-radius: 10px;
-  background-color: lightgrey;
-  border: 2px solid black;
-  padding: 2rem;
-}
-
-.form-container {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
 }
 
 .button-submit:hover {

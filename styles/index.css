@@ -78,14 +78,14 @@
 .inscripcion-info {
   text-align: center;
 }
-.pares {
+/* .pares {
   display: flex;
   margin: 2rem;
   text-align: left;
 }
 .celdas {
   padding: 0 1rem 0 0;
-}
+} */
 .submit {
   margin-top: 2rem;
   text-align: right;
@@ -106,8 +106,14 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form-column {
   width: 50%;
+  box-sizing: border-box;
   padding: 3rem 4rem;
 }
 
@@ -123,6 +129,16 @@ footer a:hover {
   height: 1.9rem;
   padding: 0 10px;
   font-size: 0.9rem;
+  border: 1px solid grey;
+}
+
+.form-backdrop {
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  background-color: rgb(233, 233, 233);
+  border: 2px solid black;
+  padding: 2rem;
 }
 
 .form-number {
@@ -135,9 +151,17 @@ footer a:hover {
   box-sizing: border-box;
 }
 
+.section-form {
+  margin: 2rem auto;
+}
+
 .container-button-form {
   display: flex;
   justify-content: space-between;
+}
+
+.btn-container {
+  padding: 0 4rem;
 }
 
 .btn {
