@@ -1,13 +1,14 @@
 .texto {
+    width: 100%;
     display: flex;
     font-size: 12px;
+    flex-direction: column;
   }
 .parrafo {
-    width: 50%;
-    display: flow-root;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 0rem 2rem 0rem 6rem;
+    padding: 2rem 2rem 0rem 6rem;
   }
 section{
     display: flexbox;
@@ -15,6 +16,7 @@ section{
 }
 .profesores{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -28,12 +30,51 @@ section{
 
 .profesores p{
     text-align: center;
-    width: 50%;
+    width: 100%;
     margin-top: 1rem;
 }
 .contenedor{
     align-items: center;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 1000px){
+    .texto{
+        display: flex;
+        flex-direction: initial;
+        width: auto;
+    }
+    .parrafo{
+        padding: 0rem 2rem 0rem 6rem;
+    }
+
+    .profesores{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 4rem;
+    
+    }
+    .profesores img{
+        border-radius: 50%;
+        width: 17rem;
+    }
+    
+    .profesores p{
+        text-align: center;
+        width: 50%;
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+    .contenedor{
+        align-items: center;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
 }
