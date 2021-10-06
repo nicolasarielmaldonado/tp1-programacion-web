@@ -3,17 +3,21 @@
   display: flex;
   font-size: 12px;
   flex-direction: column;
+  gap: 5rem;
+  margin-top: 2rem;
 }
+
 .parrafo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 2rem 0rem 6rem;
 }
+
 section {
-  display: flexbox;
-  margin: 1rem 0;
+  margin: 0 auto;
+  width: 85%;
 }
+
 .profesores {
   display: flex;
   flex-direction: column;
@@ -22,6 +26,7 @@ section {
   align-items: center;
   margin: 4rem;
 }
+
 .profesores img {
   border-radius: 50%;
   width: 17rem;
@@ -32,6 +37,7 @@ section {
   width: 100%;
   margin-top: 1rem;
 }
+
 .contenedor {
   align-items: center;
   width: 100%;
@@ -46,9 +52,6 @@ section {
     flex-direction: initial;
     width: auto;
   }
-  .parrafo {
-    padding: 0rem 2rem 0rem 6rem;
-  }
 
   .profesores {
     display: flex;
@@ -58,6 +61,7 @@ section {
     justify-content: space-around;
     margin: 4rem;
   }
+
   .profesores img {
     border-radius: 50%;
     width: 17rem;
@@ -69,6 +73,7 @@ section {
     margin-top: 1rem;
     font-size: 14px;
   }
+
   .contenedor {
     align-items: center;
     width: 50%;
