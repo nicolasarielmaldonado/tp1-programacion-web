@@ -75,21 +75,16 @@
   height: 3rem;
   text-align: center;
 }
+
 .inscripcion-info {
   text-align: center;
 }
-/* .pares {
-  display: flex;
-  margin: 2rem;
-  text-align: left;
-}
-.celdas {
-  padding: 0 1rem 0 0;
-} */
+
 .submit {
   margin-top: 2rem;
   text-align: right;
 }
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -98,10 +93,12 @@
   background-color: rgb(73, 73, 73);
   color: #fff;
 }
+
 footer a {
   color: #fff;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }

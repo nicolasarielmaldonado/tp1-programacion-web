@@ -1,92 +1,87 @@
 .container-main {
-    max-width: 95%;
-  }
+  max-width: 95%;
+}
 
 .title {
-    margin-block: 3rem;
-  }
+  margin-block: 3rem;
+}
 
-  .filters{
+.filters {
   display: flex;
   flex-direction: column;
   margin: 2rem;
   width: 100%;
-  }
+}
 
-  .filters select{
-    padding: 6px;
-  }
+.filters select {
+  padding: 6px;
+}
 
+.important-description {
+  font-weight: 600;
+  font-size: 14px;
+}
 
-  .important-description {
-    font-weight: 600;
-    font-size: 14px;
-  }
+.custom-select {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-  .custom-select {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+.section {
+  margin: 0 auto;
+  width: 80%;
+  margin-block: 2rem;
+}
 
-  .section {
-    margin: 0 auto;
-    width: 80%;
-    margin-block: 2rem;
-  }
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: start;
+}
 
-  .container {
-    
-    flex-direction: column;
-    display: flex;
-    justify-content: start;
-  }
-  
-  .card-container {
-    display: flex;
-    width: max-content;
-    margin: 2rem;
-  }
+.card-container {
+  display: flex;
+  width: max-content;
+  margin: 2rem;
+}
 
-  .image-stablishment {
-    width: 100%;
-    height: 150px;
-    border-radius: 6px 6px 6px 6px;
-       
-  }
+.image-stablishment {
+  width: 100%;
+  height: 150px;
+  border-radius: 6px 6px 6px 6px;
+}
 
-  .img-container{
-    width 50%
-  }
+.img-container {
+  width: 50%;
+}
 
-  .description {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
-    justify-content: space-between;
-  }
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  justify-content: space-between;
+}
 
-  .stablishment-name {
-    font-weight: 500;
-    font-size: 20px;
-  }
+.stablishment-name {
+  font-weight: 500;
+  font-size: 20px;
+}
 
-  .item-description {
-    font-weight: 400;
-    font-size: 12px;
-  }
+.item-description {
+  font-weight: 400;
+  font-size: 12px;
+}
 
-  .item-description a {
-    text-decoration: none;
-  }
-  
-  .item-description a:visited {
-    text-decoration: none;
-    color: black;
-  }
+.item-description a {
+  text-decoration: none;
+}
 
-  .btn {
+.item-description a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-    margin-top: 0.5rem;
-    align-self: center;
-  }  
-  
+.btn {
+  margin-top: 0.5rem;
+  align-self: center;
+}

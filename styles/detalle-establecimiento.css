@@ -1,97 +1,81 @@
-.main-container{
-    max-width:95%;
-    margin: 0 auto;
-    text-align: center;
+.main-container {
+  max-width: 95%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.main-container section{
-    display: flex;
+.main-container section {
+  display: flex;
 }
 
-.detalle-title{
-    align-items: center;
-    margin-block: 3rem;
-    
-  }
+.detalle-title {
+  align-items: center;
+  margin-block: 3rem;
+}
 
-  .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-       
-  }
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-  .img-container {
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
-    }
+.img-container {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
 
-  .image-stablishment {
-    border-radius: 6px 6px 6px 6px;
-       
-  }
+.image-stablishment {
+  border-radius: 6px 6px 6px 6px;
+}
 
-  .description-establecimiento{
-      margin-left: 30px;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+.description-establecimiento {
+  margin-left: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  }
+.description {
+  margin-left: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
-  .description {
-    margin-left: 30px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+.item-description {
+  font-weight: 400;
+  font-size: 12px;
+}
 
-  .item-description {
-    margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 12px;
-  }
+.item-description a {
+  text-decoration: none;
+}
 
-  .item-description a {
-    text-decoration: none;
-  }
-  
-  .item-description a:visited {
-    text-decoration: none;
-    color: black;
-  }
+.item-description a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-  .title-cursos {
-    align-items: center;
-    margin-block: 3rem;
-  }
-  .aside{
-    flex-wrap: wrap
-  }
+.title-cursos {
+  align-items: center;
+  margin-block: 3rem;
+}
+.aside {
+  flex-wrap: wrap;
+}
 
-  .card-container{
-      height: 300px;
-      display: flex;
-      width: 40%;
-      margin-bottom: 60px;
+.card-container {
+  display: flex;
+  width: 40%;
+  margin-bottom: 60px;
+}
 
-  }
-
-  .img-curso{
-      overflow: hidden;
-      width: 50%;
-   
-  }
-
-  .image-calendar{
-      object-fit: cover;
-  }
-
-  
-
-
-  
+.image-calendar {
+  overflow: hidden;
+  width: 50%;
+  object-fit: cover;
+}
