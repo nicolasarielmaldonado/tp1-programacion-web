@@ -23,6 +23,39 @@
   );
 }
 
+.slides {
+  display: none;
+}
+
+/* --------------------- FADING SLIDES----------------------- */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------------------------------------------------- */
+
 .section-steps,
 .section-establishments {
   margin: 2rem auto;
@@ -30,6 +63,10 @@
 
 .carrousel-button {
   position: absolute;
+  border: none;
+  margin: none;
+  padding: none;
+  background-color: transparent;
   height: 100%;
   width: 64px;
   right: 0;
@@ -39,8 +76,6 @@
   width: 64px;
   height: 64px;
   filter: invert(1);
-  position: absolute;
-  top: calc(50% - 32px);
 }
 
 .back-button {
