@@ -1,4 +1,10 @@
-var slideIndex = 1;
+window.onload = () => {
+  setInterval(() => {
+    plusSlides(1);
+  }, 3500);
+};
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -12,8 +18,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
+  let i;
+  let slides = document.getElementsByClassName("slides");
   if (n > slides.length) {
     slideIndex = 1;
   }
