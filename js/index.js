@@ -107,6 +107,24 @@ function changeEstablecimiento() {
   });
 }
 
+function incribirse(e) {
+  e.preventDefault();
+  let establecimiento = document.getElementById("establishment").value;
+  let lenguaje = document.getElementById("language").value;
+  let horario = document.getElementById("hourshift").value;
+  let precio = document.getElementById("precio").value;
+  if (establecimiento && lenguaje && horario && precio) {
+    localStorage.setItem("inscripcion", [
+      establecimiento,
+      lenguaje,
+      horario,
+      precio,
+    ]);
+  } else {
+    alert("Datos Incompletos!");
+  }
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
