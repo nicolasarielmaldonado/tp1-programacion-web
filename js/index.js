@@ -2,6 +2,10 @@ window.onload = () => {
   setInterval(() => {
     plusSlides(1);
   }, 3500);
+
+  $("#form").submit(function () {
+    return validar();
+  });
 };
 
 let provincias = ["Buenos Aires", "Santa Fe", "La Pampa", "Cordoba"];
@@ -114,12 +118,11 @@ function incribirse(e) {
   let horario = document.getElementById("hourshift").value;
   let precio = document.getElementById("precio").value;
   if (establecimiento && lenguaje && horario && precio) {
-    localStorage.setItem("inscripcion", [
-      establecimiento,
-      lenguaje,
-      horario,
-      precio,
-    ]);
+    localStorage.setItem("establecimiento", establecimiento);
+    localStorage.setItem("lenguaje", lenguaje);
+    localStorage.setItem("horario", horario);
+    localStorage.setItem("precio", precio);
+    window.location.href = "/inscripcion.html";
   } else {
     alert("Datos Incompletos!");
   }

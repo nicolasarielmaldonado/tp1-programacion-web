@@ -57,12 +57,8 @@
     <h1 class="title">Inscripción</h1>
     <section>
       <div class="inscripcion-info">
-        <p>
-          Inscripción al curso de idioma en la sede Establecimiento en tal
-          horario.
-        </p>
-        <p>El curso inicia el día 00/00/0000</p>
-        <p>El precio es de $0000</p>
+        <p id="datos-sede-horario"></p>
+        <p id="datos-precio"></p>
       </div>
 
       <div class="form-backdrop section-form">
@@ -91,38 +87,17 @@
 
               <div class="form-input-container">
                 <label for="provincia">Provincia</label>
-                <select name="provincia" id="provincia" class="form-input">
-                  <option value="0" selected>Seleccione una provincia</option>
-                  <option value="1">Buenos Aires</option>
-                  <option value="2">C.A.B.A.</option>
-                  <option value="3">Córdoba</option>
-                  <option value="4">Santa Fe</option>
-                  <option value="5">Entre Río</option>
-                  <option value="6">La Pampa</option>
-                  <option value="7">Corrientes</option>
-                  <option value="8">Misiones</option>
-                  <option value="9">Chaco</option>
-                  <option value="10">Formosa</option>
-                  <option value="11">Santiago del Estero</option>
-                  <option value="12">Tucumán</option>
-                  <option value="13">Jujuy</option>
-                  <option value="14">Salta</option>
-                  <option value="15">Catamarca</option>
-                  <option value="16">La Rioja</option>
-                  <option value="17">San Juan</option>
-                  <option value="18">San Luis</option>
-                  <option value="19">Mendoza</option>
-                  <option value="20">Neuquén</option>
-                  <option value="21">Río Negro</option>
-                  <option value="22">Chubut</option>
-                  <option value="23">Santa Cruz</option>
-                  <option value="24">Tierra del Fuego</option>
+                <select name="provincias" id="provincias" class="form-input">
+                  <option value="0">Seleccione una provincia</option>
                 </select>
               </div>
 
               <div class="form-input-container">
-                <label for="ciudad">Ciudad</label>
-                <select name="localidad" id="localidad" class="form-input">
+                <label for="municipios">Municipio</label>
+                <select name="municipios" id="municipios" class="form-input">
+                  <option value="0">Seleccione un municipio</option>
+                </select>
+
               </div>
             </div>
             <div class="btn-container">
