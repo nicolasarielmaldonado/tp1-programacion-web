@@ -193,20 +193,21 @@
           <div class="form-column">
             <div class="form-input-container">
               <label for="provincia">Seleccioná la provincia:</label>
-              <select id="provincia" name="provincia" class="form-input">
+              <select
+                id="provincia"
+                name="provincia"
+                class="form-input"
+                onchange="changeProvincia()"
+              >
                 <option value="" disabled selected></option>
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Santa Fe">Santa Fe</option>
-                <option value="La Pampa">La Pampa</option>
-                <option value="Cordoba">Cordoba</option>
               </select>
             </div>
             <div>
-              <p>Nombre del establecimiento:</p>
-              <p>Dirección:</p>
-              <p>Localidad:</p>
-              <p>Provincia:</p>
-              <p>Email:</p>
+              <p >Nombre del establecimiento: <span id="establishmentNombre"></span></p>
+              <p >Dirección: <span id="establishmentDireccion"></span></p>
+              <p >Localidad: <span id="establishmentLocalidad"></span></p>
+              <p >Provincia: <span id="establishmentProvincia"></span></p>
+              <p >Email: <span id="establishmentEmail"></span></p>
             </div>
           </div>
 
@@ -217,12 +218,9 @@
                 id="establishment"
                 name="establishment"
                 class="form-input"
+                onchange="changeEstablecimiento()"
               >
                 <option value="" disabled selected></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
               </select>
             </div>
 
@@ -249,7 +247,7 @@
             <div class="container-button-form">
               <div class="form-input-container">
                 <p>Precio:</p>
-                <div type="number" class="form-number"></div>
+                <input type="number" class="form-number" id="precio" disabled></input>
               </div>
               <button type="submit" class="btn">INSCRIBITE</button>
             </div>
