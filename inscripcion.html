@@ -1,114 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/index.css" />
-    <title>Inscripcion</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="top-bar">
-        <img class="logo" src="/img/unlam.svg" alt="Logo_Unlam" />
-        <div class="right-buttons">
-          <div class="circle-button">
-            <img class="social-media-img" src="./img/facebook.svg" alt="facebook" />
-          </div>
-          <div class="circle-button">
-            <img class="social-media-img" src="./img/twitter.svg" alt="twitter" />
-          </div>
-          <div class="circle-button">
-            <img class="social-media-img" src="./img/instagram.svg" alt="instagram" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/index.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/validacion-formulario.js"></script>
+  <title>Inscripcion</title>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <img class="logo" src="/img/unlam.svg" alt="Logo_Unlam" />
+      <div class="right-buttons">
+        <div class="circle-button">
+          <img class="social-media-img" src="./img/facebook.svg" alt="facebook" />
+        </div>
+        <div class="circle-button">
+          <img class="social-media-img" src="./img/twitter.svg" alt="twitter" />
+        </div>
+        <div class="circle-button">
+          <img class="social-media-img" src="./img/instagram.svg" alt="instagram" />
         </div>
       </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-list-item"><a href="/index.html">HOME</a></li>
-          <li class="nav-list-item">
-            <a href="/establecimiento.html">ESTABLECIMIENTO</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="/inscripcion.html">INSCRIPCION</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="/calendario.html">CALENDARIO</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="/contacto.html">CONTACTO</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="/nosotros.html">NOSOTROS</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="/index.html">HOME</a></li>
+        <li class="nav-list-item">
+          <a href="/establecimiento.html">ESTABLECIMIENTO</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/inscripcion.html">INSCRIPCION</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/calendario.html">CALENDARIO</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/contacto.html">CONTACTO</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/nosotros.html">NOSOTROS</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <h1 class="title">Inscripción</h1>
-      <section>
-        <div class="inscripcion-info">
-          <p>
-            Inscripción al curso de idioma en la sede Establecimiento en tal
-            horario.
-          </p>
-          <p>El curso inicia el día 00/00/0000</p>
-          <p>El precio es de $0000</p>
-        </div>
+  <main>
+    <h1 class="title">Inscripción</h1>
+    <section>
+      <div class="inscripcion-info">
+        <p>
+          Inscripción al curso de idioma en la sede Establecimiento en tal
+          horario.
+        </p>
+        <p>El curso inicia el día 00/00/0000</p>
+        <p>El precio es de $0000</p>
+      </div>
 
-        <div class="form-backdrop section-form">
+      <div class="form-backdrop section-form">
         <div class="inscripcion-form">
-          <form class="form-container" action="" method="POST">
+          <form class="form-container" action="#" name="form" id="form">
             <div class="form-column">
               <div class="form-input-container">
                 <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  required
-                  class="form-input"
-                />
+                <input type="text" id="nombre" name="nombre" required class="form-input" />
               </div>
               <div class="form-input-container">
                 <label for="apellido">Apellido</label>
-                <input
-                  type="text"
-                  name="apellido"
-                  id="apellido"
-                  required
-                  class="form-input"
-                />
+                <input type="text" name="apellido" id="apellido" required class="form-input" />
               </div>
               <div class="form-input-container">
                 <label for="telefono">Teléfono</label>
-                <input
-                  type="tel"
-                  id="telefono"
-                  name="telefono"
-                  required
-                  class="form-input"
-                />
+                <input type="tel" id="telefono" name="telefono" required class="form-input" />
               </div>
             </div>
 
             <div class="form-column">
               <div class="form-input-container">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required class="form-input"/>
+                <input type="email" name="email" id="email" required class="form-input" />
               </div>
 
               <div class="form-input-container">
                 <label for="provincia">Provincia</label>
-                <select name="telefono" id="telefono" class="form-input">
+                <select name="provincia" id="provincia" class="form-input">
                   <option value="0" selected>Seleccione una provincia</option>
                   <option value="1">Buenos Aires</option>
                   <option value="2">C.A.B.A.</option>
@@ -138,47 +121,49 @@
               </div>
 
               <div class="form-input-container">
-              <label for="ciudad">Ciudad</label>
-                <input type="text" name="ciudad" id="ciudad" class="form-input"/>
+                <label for="ciudad">Ciudad</label>
+                <select name="localidad" id="localidad" class="form-input">
               </div>
             </div>
             <div class="btn-container">
-              <button class="btn">Inscribite</button>
+              <input type="submit" class="btn" value="Inscribirme"></input>
+              <div id="mensaje-inscripcion" class="error-inscripcion"></div>
             </div>
 
           </form>
         </div>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <div class="integrantes">
-        <p>Fagnano, Facundo Damián - DNI</p>
-        <p>Lamastra, Diego Martín - DNI</p>
-        <p>Maldonado, Nicolás Ariel - DNI</p>
-        <p>Orquín, Nuria - DNI</p>
-      </div>
-      <div class="menu">
-        <p>
-          <a href="/establecimiento.html">Establecimientos</a>
-        </p>
-        <p><a href="/inscripcion.html">Inscripción</a></p>
-        <p><a href="/calendario.html">Calendario</a></p>
-        <p><a href="/contacto.html">Contacto</a></p>
-      </div>
-      <div>
-        <div class="right-buttons">
-          <div class="circle-button">
-            <img class="social-media-img" src="./img/facebook.svg" alt="facebook" />
-          </div>
-          <div class="circle-button">
-            <img class="social-media-img" src="./img/twitter.svg" alt="twitter" />
-          </div>
-          <div class="circle-button">
-            <img class="social-media-img" src="./img/instagram.svg" alt="instagram" />
-          </div>
+  <footer class="footer">
+    <div class="integrantes">
+      <p>Fagnano, Facundo Damián - DNI</p>
+      <p>Lamastra, Diego Martín - DNI</p>
+      <p>Maldonado, Nicolás Ariel - DNI</p>
+      <p>Orquín, Nuria - DNI</p>
+    </div>
+    <div class="menu">
+      <p>
+        <a href="/establecimiento.html">Establecimientos</a>
+      </p>
+      <p><a href="/inscripcion.html">Inscripción</a></p>
+      <p><a href="/calendario.html">Calendario</a></p>
+      <p><a href="/contacto.html">Contacto</a></p>
+    </div>
+    <div>
+      <div class="right-buttons">
+        <div class="circle-button">
+          <img class="social-media-img" src="./img/facebook.svg" alt="facebook" />
+        </div>
+        <div class="circle-button">
+          <img class="social-media-img" src="./img/twitter.svg" alt="twitter" />
+        </div>
+        <div class="circle-button">
+          <img class="social-media-img" src="./img/instagram.svg" alt="instagram" />
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

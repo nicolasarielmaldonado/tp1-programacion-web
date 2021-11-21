@@ -79,7 +79,12 @@
 .inscripcion-info {
   text-align: center;
 }
-
+.error-inscripcion {
+  color: crimson;
+}
+#mensaje-inscripcion {
+  margin-top: 2em;
+}
 .submit {
   margin-top: 2rem;
   text-align: right;
