@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/establecimiento.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/establecimientos.js"></script>
     <title>Establecimiento</title>
   </head>
   <body>
@@ -69,7 +71,7 @@
 
       <section class="section">
         <div class="filters">
-          <select>
+          <select id="provincias">
             <option value="0">Seleccionar Provincia</option>
             <option value="1">Buenos Aires</option>
             <option value="2">Santa Fe</option>
@@ -79,7 +81,7 @@
         </div>
 
         <div class="container">
-          <div class="card-container">
+          <div class="card-container" id="1">
             <img
               src="img/stablishment-1.webp"
               class="image-stablishment"
@@ -88,13 +90,13 @@
             <div class="description">
               <h3 class="stablishment-name">ESTABLECIMIENTO 1</h3>
               <span class="item-description">Aaaaa 000</span>
-              <span class="item-description">Buenos Aires</span>
+              <span class="item-description location">Buenos Aires</span>
               <span class="item-description">Inglés</span>
               <a href="detalle-establecimiento.html" class="btn">Ver detalle</a>
             </div>
           </div>
 
-          <div class="card-container">
+          <div class="card-container" id="2">
             <img
               src="img/stablishment-2.webp"
               class="image-stablishment"
@@ -103,13 +105,13 @@
             <div class="description">
               <h3 class="stablishment-name">ESTABLECIMIENTO 2</h3>
               <span class="item-description">Bbbbb 111</span>
-              <span class="item-description">Santa Fe</span>
+              <span class="item-description location">Santa Fe</span>
               <span class="item-description">Inglés</span>
               <a href="detalle-establecimiento.html" class="btn">Ver detalle</a>
             </div>
           </div>
 
-          <div class="card-container">
+          <div class="card-container" id="3">
             <img
               src="img/stablishment-3.webp"
               class="image-stablishment"
@@ -118,13 +120,13 @@
             <div class="description">
               <h3 class="stablishment-name">ESTABLECIMIENTO 3</h3>
               <span class="item-description">Ccccc 222</span>
-              <span class="item-description">La Pampa</span>
+              <span class="item-description location">La Pampa</span>
               <span class="item-description">Inglés</span>
               <a href="detalle-establecimiento.html" class="btn">Ver detalle</a>
             </div>
           </div>
 
-          <div class="card-container">
+          <div class="card-container" id="4">
             <img
               src="img/stablishment-4.webp"
               class="image-stablishment"
@@ -133,7 +135,7 @@
             <div class="description">
               <h3 class="stablishment-name">ESTABLECIMIENTO 4</h3>
               <span class="item-description">Ddddd 333</span>
-              <span class="item-description">Córdoba</span>
+              <span class="item-description location">Córdoba</span>
               <span class="item-description">Inglés</span>
               <a href="detalle-establecimiento.html" class="btn">Ver detalle</a>
             </div>
