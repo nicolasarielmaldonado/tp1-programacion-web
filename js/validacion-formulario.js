@@ -38,7 +38,11 @@ function validar() {
     error++;
     $("#municipios").addClass("error-inscripcion");
   }
-
+  if ($("#comments").val() == "") {
+    mensaje += "<p>Debe ingresar un comentario</p>";
+    error++;
+    $("#comments").addClass("error-inscripcion");
+  }
   if (error > 0) {
     $("#mensaje-inscripcion").append(mensaje);
     return false;
@@ -53,6 +57,7 @@ function reset() {
   $("#email").removeClass("error-inscripcion");
   $("#municipios").removeClass("error-inscripcion");
   $("#telefono").removeClass("error-inscripcion");
+  $("#comments").removeClass("error-inscripcion");
   $("#mensaje-inscripcion").empty();
 }
 
@@ -115,6 +120,9 @@ $(document).ready(function () {
   });
   $("#email").keyup(function () {
     validar("#email");
+  });
+  $("#comments").keyup(function () {
+    validar();
   });
   $("#provincias").change(function (e) {
     validar();
