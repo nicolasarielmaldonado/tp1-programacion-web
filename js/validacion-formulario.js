@@ -1,31 +1,32 @@
+let max = 1000;
 function validar() {
   var regexemail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
   var mensaje = "";
   var error = 0;
-  var regextelefono = /[0-9]+$/;
+  var regextelefono = /^[0-9]{4}\-[0-9]{4}$/;
   console.log("Llegó a la función");
   reset();
   if ($("#nombre").val() == "") {
-    mensaje += "<p>El campo nombre es obligatorio </p>";
+    mensaje += "<p>El campo nombre es obligatorio.</p>";
     error++;
     $("#nombre").addClass("error-inscripcion");
   }
   if ($("#apellido").val() == "") {
-    mensaje += "<p>El campo apellido es obligatorio </p>";
+    mensaje += "<p>El campo apellido es obligatorio.</p>";
     error++;
     $("#apellido").addClass("error-inscripcion");
   }
   if (!$("#telefono").val().match(regextelefono)) {
-    mensaje += "<p>Debe agregar un número de telefóno</p>";
+    mensaje += "<p>Debe agregar un número de telefóno (Formato: 1234-1234).</p>";
     error++;
   }
   if (!$("#email").val().match(regexemail)) {
-    mensaje += "<p>Debe ser un email valido</p>";
+    mensaje += "<p>Debe ser un email válido.</p>";
     error++;
     $("#email").addClass("error-inscripcion");
   }
   if ($("#provincias option:selected").val() == 0) {
-    mensaje += "<p>Debe seleccionar una provincia</p>";
+    mensaje += "<p>Debe seleccionar una provincia.</p>";
     error++;
     $("#provincias").addClass("error-inscripcion");
   }
@@ -34,7 +35,7 @@ function validar() {
     $("#provincias option:selected").val() != 0 &&
     $("#municipios option:selected").val() == 0
   ) {
-    mensaje += "<p>Debe seleccionar un municipio</p>";
+    mensaje += "<p>Debe seleccionar un municipio.</p>";
     error++;
     $("#municipios").addClass("error-inscripcion");
   }
@@ -102,9 +103,20 @@ function obtenerProvincias() {
     });
 }
 
+function mostrarModal(e){
+  $("#modal").show();
+  e.preventDefault();
+  console.log(e);
+}
+
 $(document).ready(function () {
+  let form = $("#form");
+    form.onsubmit = function(e) {
+        e.preventDefault
+    }
   renderizarDatosEnSeccion();
   obtenerProvincias();
+  $('#modal').hide();
 
   $("#form").submit(function () {
     return validar();
@@ -123,6 +135,17 @@ $(document).ready(function () {
   });
   $("#comments").keyup(function () {
     validar();
+    $("#comments").attr('maxlength', max);
+    var disponible = $("#comments").val().length;
+    console.log(disponible);
+    var mensaje = "";
+
+    if(max>=disponible){
+      $("#msg").remove();
+      mensaje = `<p id="msg">${disponible} de ${max} caracteres disponibles</p>`;
+      $("#comments").addClass("contador");
+      $("#contador").append(mensaje);
+    }
   });
   $("#provincias").change(function (e) {
     validar();
