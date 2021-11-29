@@ -10,78 +10,108 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="stylesheet" href="../styles/contacto.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/contacto.css" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/validacion-formulario.js"></script>
-  <title>Contacto</title>
-</head>
+    <script src="js/validacion-formulario.js"></script>
+    <title>Contacto</title>
+  </head>
 
-<body>
-
-  <header>
-    <div class="top-bar">
-      <img class="logo" src="/img/unlam.svg" alt="Logo_Unlam" />
-      <div class="right-buttons">
-        <div class="circle-button">
-          <img class="social-media-img" src="./img/facebook.svg" alt="facebook" />
-        </div>
-        <div class="circle-button">
-          <img class="social-media-img" src="./img/twitter.svg" alt="twitter" />
-        </div>
-        <div class="circle-button">
-          <img class="social-media-img" src="./img/instagram.svg" alt="instagram" />
+  <body>
+    <header>
+      <div class="top-bar">
+        <img class="logo" src="img/unlam.svg" alt="Logo_Unlam" />
+        <div class="right-buttons">
+          <div class="circle-button">
+            <img
+              class="social-media-img"
+              src="img/facebook.svg"
+              alt="facebook"
+            />
+          </div>
+          <div class="circle-button">
+            <img class="social-media-img" src="img/twitter.svg" alt="twitter" />
+          </div>
+          <div class="circle-button">
+            <img
+              class="social-media-img"
+              src="img/instagram.svg"
+              alt="instagram"
+            />
+          </div>
         </div>
       </div>
-    </div>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list-item"><a href="/index.html">HOME</a></li>
-        <li class="nav-list-item">
-          <a href="/establecimiento.html">ESTABLECIMIENTO</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="/inscripcion.html">INSCRIPCION</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="/calendario.html">CALENDARIO</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="/contacto.html">CONTACTO</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="/nosotros.html">NOSOTROS</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="index.html">HOME</a></li>
+          <li class="nav-list-item">
+            <a href="establecimiento.html">ESTABLECIMIENTO</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="inscripcion.html">INSCRIPCION</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="calendario.html">CALENDARIO</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="nosotros.html">NOSOTROS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <div class="modal" id="modal">
-      <div class="enviado" id="enviado">
-        Envío Exitoso.
+    <main>
+      <div class="modal" id="modal">
+        <div class="enviado" id="enviado">Envío Exitoso.</div>
       </div>
-    </div>
-    <section>
-      <div class="column">
-        <h1>Contacto</h1>
-        <form id="form">
-          <label for="name">Nombre</label>
-          <input class="field" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" />
+      <section>
+        <div class="column">
+          <h1>Contacto</h1>
+          <form id="form">
+            <label for="name">Nombre</label>
+            <input
+              class="field"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
 
-          <label for="email">Mail</label>
-          <input class="field" type="email" id="email" name="email" placeholder="Ingrese su email" />
+            <label for="email">Mail</label>
+            <input
+              class="field"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingrese su email"
+            />
 
-          <label for="phone">Celular</label>
-          <input class="field" type="tel" id="telefono" name="telefono" placeholder="Ingrese su celular" />
+            <label for="phone">Celular</label>
+            <input
+              class="field"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ingrese su celular"
+            />
 
-          <label for="comments">Comentarios</label>
-          <textarea class="field" id="comments" name="comments" placeholder="Ingrese su comentario"></textarea>
-          <div id="contador" class="contador"></div>
+            <label for="comments">Comentarios</label>
+            <textarea
+              class="field"
+              id="comments"
+              name="comments"
+              placeholder="Ingrese su comentario"
+            ></textarea>
+            <div id="contador" class="contador"></div>
 
-          <button class="btn" type="submit" onclick="mostrarModal(event)">Enviar</button>
-          <div id="mensaje-inscripcion" class="error-inscripcion"></div>
-        </form>
+            <button class="btn" type="submit" onclick="mostrarModal(event)">
+              Enviar
+            </button>
+            <div id="mensaje-inscripcion" class="error-inscripcion"></div>
+          </form>
         </div>
         <div class="column">
           <h2>Datos de contacto</h2>
@@ -133,32 +163,28 @@
       </div>
       <div class="menu">
         <p>
-          <a href="/establecimiento.html">Establecimientos</a>
+          <a href="establecimiento.html">Establecimientos</a>
         </p>
-        <p><a href="/inscripcion.html">Inscripción</a></p>
-        <p><a href="/calendario.html">Calendario</a></p>
-        <p><a href="/contacto.html">Contacto</a></p>
+        <p><a href="inscripcion.html">Inscripción</a></p>
+        <p><a href="calendario.html">Calendario</a></p>
+        <p><a href="contacto.html">Contacto</a></p>
       </div>
       <div>
         <div class="right-buttons">
           <div class="circle-button">
             <img
               class="social-media-img"
-              src="./img/facebook.svg"
+              src="img/facebook.svg"
               alt="facebook"
             />
           </div>
           <div class="circle-button">
-            <img
-              class="social-media-img"
-              src="./img/twitter.svg"
-              alt="twitter"
-            />
+            <img class="social-media-img" src="img/twitter.svg" alt="twitter" />
           </div>
           <div class="circle-button">
             <img
               class="social-media-img"
-              src="./img/instagram.svg"
+              src="img/instagram.svg"
               alt="instagram"
             />
           </div>
